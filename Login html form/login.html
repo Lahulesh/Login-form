@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login form</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: initial;
+            background-color: rgba(15, 11, 1, 0.904);
+        }
+        .box{
+            transform: translate(-50%,-50%);
+            text-align: center;
+            margin: 00px;
+            padding: 40px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: rgb(20, 0, 5);
+        }
+        .box input[type = "text"], .box input[type="password"]
+        {
+            border: 0;
+            border: 3px solid;
+            margin: 20px auto;
+            background: none;
+            display: block;
+            text-align: center;
+            padding: 14px 10px;
+            
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 025s;
+        }
+        .box h1{
+            color: white;
+            font-weight: 600;
+        }
+        .box input[type = "text"]:focus ,.box input[type="password"]:focus
+        {
+            width: 500px;
+            border-color: rgb(19, 2, 2);
+        }
+        .box input[type = "submit"]
+        {
+            border: 0;
+            border: 3px solid;
+            margin: 20px auto;
+            background: none;
+            display: block;
+            text-align: center;
+            padding: 14px 40px;
+            outline: none;
+            color: white;
+            border-radius: 24px;
+            transition: 025s;
+            cursor: pointer;
+        }
+        .box input[type= "submit"]:hover
+        {
+            background: rgb(143, 58, 58);
+        }
+
+
+    </style>
+</head>
+<body>
+    <form class="box" action="login.html" method="POST">
+
+        <h1>LoginForm</h1>
+        <input type="text" placeholder="Username" name="">
+        <input type="password" placeholder="Password" name="">
+        <input type="submit" name="" value="Login"> 
+    </form>
+</body>
+</html>
